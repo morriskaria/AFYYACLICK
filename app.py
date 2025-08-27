@@ -1,8 +1,9 @@
-from models import Base,engine 
-
+# app.py
+from models import Base, engine
 
 if __name__ == "__main__":
-    #create all tables 
-
+    cli = Afyyaclick()
+    cli.run()
+    # Create all tables
     Base.metadata.create_all(engine)
     print("Database tables created successfully!")
