@@ -6,4 +6,4 @@ if __name__ == "__main__":
     cli.run()
     # Create all tables
     Base.metadata.create_all(engine)
-    print("Database tables created successfully!")
+   

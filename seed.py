@@ -238,98 +238,98 @@ appointments = [
         date_time=now + timedelta(days=1)
     ),
     Appointment(
-        patient_id=1,  # John Smith
-        doctor_id=1,   # Sarah Johnson (Cardiologist)
+        patient_id=1,  
+        doctor_id=1,   
         status="Scheduled"
     ),
     Appointment(
-        patient_id=2,  # Mary Johnson
-        doctor_id=3,   # Amina Patel (Pediatrician)
+        patient_id=2,  
+        doctor_id=3,   
         status="Completed"
     ),
     Appointment(
-        patient_id=3,  # Daniel Kimani
-        doctor_id=2,   # Michael Chen (Neurologist)
+        patient_id=3,  
+        doctor_id=2,   
         status="Scheduled"
     ),
     Appointment(
-        patient_id=4,  # Grace Mwangi
-        doctor_id=7,   # Emily Wilson (Gynecologist)
+        patient_id=4,  
+        doctor_id=7,   
         status="Completed"
     ),
     Appointment(
-        patient_id=5,  # Paul Ochieng
-        doctor_id=3,   # Amina Patel (Pediatrician)
+        patient_id=5,  
+        doctor_id=3,   
         status="Cancelled"
     ),
     Appointment(
-        patient_id=6,  # Susan Atieno
-        doctor_id=1,   # Sarah Johnson (Cardiologist)
+        patient_id=6,  
+        doctor_id=1,   
         status="Scheduled"
     ),
     Appointment(
-        patient_id=7,  # Brian Odhiambo
-        doctor_id=3,   # Amina Patel (Pediatrician)
+        patient_id=7,  
+        doctor_id=3,   
         status="Completed"
     ),
     Appointment(
-        patient_id=8,  # Lucy Wanjiku
-        doctor_id=9,   # Maria Garcia (Dentist)
+        patient_id=8,  
+        doctor_id=9,  
         status="Scheduled"
     ),
     Appointment(
-        patient_id=9,  # Peter Kamau
-        doctor_id=4,   # David Williams (Orthopedic Surgeon)
+        patient_id=9,  
+        doctor_id=4,  
         status="Completed"
     ),
     Appointment(
-        patient_id=10, # Esther Nyambura
-        doctor_id=5,   # Lisa Rodriguez (Dermatologist)
+        patient_id=10, 
+        doctor_id=5,   
         status="Scheduled"
     ),
     Appointment(
-        patient_id=11, # David Mbugua
-        doctor_id=6,   # James Taylor (Ophthalmologist)
+        patient_id=11, 
+        doctor_id=6,   
         status="Completed"
     ),
     Appointment(
-        patient_id=12, # Ruth Wairimu
-        doctor_id=7,   # Emily Wilson (Gynecologist)
+        patient_id=12, 
+        doctor_id=7,   
         status="Scheduled"
     ),
     Appointment(
-        patient_id=13, # Joseph Ndirangu
-        doctor_id=8,   # Robert Kim (Psychiatrist)
+        patient_id=13, 
+        doctor_id=8,   
         status="Completed"
     ),
     Appointment(
-        patient_id=14, # Sarah Adhiambo
-        doctor_id=10,  # Thomas Brown (General Practitioner)
+        patient_id=14, 
+        doctor_id=10,  
         status="Scheduled"
     ),
     Appointment(
-        patient_id=15, # Samuel Gitonga
-        doctor_id=3,   # Amina Patel (Pediatrician)
+        patient_id=15, 
+        doctor_id=3, 
         status="Cancelled"
     ),
     Appointment(
-        patient_id=1,  # John Smith
-        doctor_id=10,  # Thomas Brown (General Practitioner)
+        patient_id=1, 
+        doctor_id=10, 
         status="Scheduled"
     ),
     Appointment(
-        patient_id=3,  # Daniel Kimani
-        doctor_id=8,   # Robert Kim (Psychiatrist)
+        patient_id=3,  
+        doctor_id=8,  
         status="Completed"
     ),
     Appointment(
-        patient_id=6,  # Susan Atieno
-        doctor_id=2,   # Michael Chen (Neurologist)
+        patient_id=6,  
+        doctor_id=2,   
         status="Scheduled"
     ),
     Appointment(
-        patient_id=9,  # Peter Kamau
-        doctor_id=1,   # Sarah Johnson (Cardiologist)
+        patient_id=9,  
+        doctor_id=1,   
         status="Completed"
     )
 ]
@@ -341,6 +341,5 @@ session.commit()
 print("Database seeded successfully!")
 session.close()
 
-#execution-run only when when script is executed directly 
 
 

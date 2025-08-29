@@ -20,7 +20,6 @@ class Afyyaclick:
 
 #display menu 
     def display_menu(self):
-        print("\n===Get Started ===")
         print("1. View all patients")
         print("2. View all doctors")
         print("3. View all appointments")
