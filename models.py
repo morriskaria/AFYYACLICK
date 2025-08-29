@@ -44,7 +44,7 @@ class Appointment(Base):
     patient_id = Column(Integer, ForeignKey('patients.id'))
     doctor_id = Column(Integer, ForeignKey('doctors.id'))
     status = Column(String)
-    date_time = Column(DateTime, default=datetime.now)  # Added datetime field
+    date_time = Column(DateTime, default=datetime.now)  
     
     patient = relationship("Patient", back_populates="appointments")
     doctor = relationship("Doctor", back_populates="appointments")
