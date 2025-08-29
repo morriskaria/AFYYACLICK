@@ -10,7 +10,7 @@ def seed_database():
 
 
 #need to create  a connection to the db 
-engine = create_engine("sqlite:///ehospital.db")
+engine = create_engine("sqlite:///Afyyaclick.db")
 Base.metadata.create_all(engine)
 
 

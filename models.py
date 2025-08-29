@@ -1,5 +1,6 @@
 #data models 
 # models.py
+from datetime import datetime
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, DateTime, Float
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 
@@ -43,10 +44,15 @@ class Appointment(Base):
     patient_id = Column(Integer, ForeignKey('patients.id'))
     doctor_id = Column(Integer, ForeignKey('doctors.id'))
     status = Column(String)
-    date_time = Column(DateTime)  # Added datetime field
+    date_time = Column(DateTime, default=datetime.now)  # Added datetime field
     
     patient = relationship("Patient", back_populates="appointments")
     doctor = relationship("Doctor", back_populates="appointments")
     
     def __repr__(self):
         return f"Appointment(id={self.id}, patient_id={self.patient_id}, doctor_id={self.doctor_id}, status='{self.status}')"
+    
+
+engine = create_engine('sqlite:///Afyyaclick.db')
+Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine)

@@ -6,7 +6,7 @@ import sys
 
 class Afyyaclick:
     def __init__(self):
-        self.engine = create_engine("sqlite:///ehospital.db")
+        self.engine = create_engine("sqlite:///Afyyaclick.db")
         Session = sessionmaker(bind=self.engine)
         self.session = Session()
 
