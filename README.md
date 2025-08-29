@@ -14,5 +14,8 @@ A command-line interface (CLI) application for managing hospital operations, inc
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
-   cd ehospital-cli
+   git clone <https://github.com/morriskaria/AFYYACLICK.git>
+   cd AFYYACLICK 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
